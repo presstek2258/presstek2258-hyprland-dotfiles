@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=ChatGPT -App
+Comment=Launch ChatGPT
+Exec=brave --app=https://chat.openai.com
+Icon=brave
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;

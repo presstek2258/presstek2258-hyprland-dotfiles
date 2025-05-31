@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Gemini -App 
+Comment=Launch Gemini 
+Exec=brave --app=https://gemini.google.com/
+Icon=brave
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;

@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=MyOntarioTech -App 
+Comment=Launch MyOntarioTech 
+Exec=brave --app=https://my.ontariotechu.ca/
+Icon=brave
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;

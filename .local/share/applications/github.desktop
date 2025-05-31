@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Github -App 
+Comment=Launch Github
+Exec=brave --app=https://www.github.com
+Icon=brave
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;

@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Immersed
+Comment=Launch Immersed desktop agent
+Exec=/home/adrian/Immersed/run_immersed.sh
+Icon=Immersed
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
