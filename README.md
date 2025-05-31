@@ -18,7 +18,7 @@ yay -Syu
 ```
 
 ```bash
-yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux pcloud-drive brave-bin htop ttf-jetbrains-mono ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator nvidia nvidia-utils ollama-cuda tailscale thunar tldr unrar unzip wget
+yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux pcloud-drive brave-bin htop ttf-jetbrains-mono ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator nvidia nvidia-utils ollama-cuda tailscale thunar tldr unrar unzip wget nwg-look
 ```
 
 ## clone repo directly to your .config / .local
@@ -39,6 +39,10 @@ chsh -s /bin/zsh
 ```
 
 > RE-LOG: relog to apply the changes
+
+## change gtk programs theme
+
+> OPEN: GTK-settings (nwg-look) and change the theme
 
 ## brightness keys
 
