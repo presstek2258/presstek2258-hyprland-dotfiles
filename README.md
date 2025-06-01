@@ -26,7 +26,7 @@ yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland
 > WARNING: THIS WILL REPLACE FILES!!!
 
 ```bash
-git clone https://github.com/presstek2258/endeavouros-dotfiles.git ~/temp-config
+git clone https://github.com/presstek2258/presstek2258-hyprland-dotfiles.git ~/temp-config
 rm -rf ~/temp-config/.git
 sudo cp -r ~/temp-config/. ~/
 rm -rf ~/temp-config
