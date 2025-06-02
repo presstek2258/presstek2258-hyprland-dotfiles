@@ -1,0 +1,131 @@
+@import "frappe.css";
+
+*{
+  font-family: FantasqueSansMono Nerd Font;
+  font-size: 14px;
+  min-height: 0;
+}
+
+#waybar {
+  background: @tokyonightblue;
+  color: @lightblue;
+  margin: 5px 5px;
+}
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @lightgrey;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: @lightblue;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @navyblue;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @lightblue;
+  border-radius: 1rem;
+}
+
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#bluetooth,
+#network,
+#custom-lock,
+#custom-power {
+  background-color: @lightgrey;
+  margin: 5px 0;
+}
+#pulseaudio,
+#network,
+#bluetooth,
+#clock,
+#tray,
+#backlight {
+  padding: 0.5rem 1rem;
+}
+
+#cpu,
+#memory,
+#temperature,
+#custom-space_left{
+  background-color: @lightgrey;
+  color: @lightblue;
+  margin: 5px 0;
+  padding-right: 0.5rem;
+}
+
+#custom-cpu,
+#custom-memory,
+#custom-battery,
+#custom-temperature,
+#custom-space_left_text{
+  background-color: @lightgrey;
+  color: @navyblue;
+  margin: 5px 0;
+  padding-left: 0.5rem;
+}
+#custom-temperature{
+  border-radius: 1rem 0 0 1rem;
+}
+
+#clock {
+  color: @navyblue;
+  border-radius: 1rem;
+}
+
+#battery {
+  color: @lightblue;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @lightblue;
+}
+
+#backlight, #battery {
+    border-radius: 0;
+    border-radius: 0px 1rem 1rem 0px;
+}
+
+#bluetooth {
+  color: @navyblue;
+}
+
+#pulseaudio {
+  color: @navyblue;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#custom-power {
+    margin-right: 1rem;
+    border-radius: 0px 1rem 1rem 0px;
+    color: @red;
+}
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
