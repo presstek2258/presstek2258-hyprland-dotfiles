@@ -114,9 +114,9 @@
 }
 
 #custom-power {
-    margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
-    color: @red;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    color: @lightblue;
 }
 
 #tray {
