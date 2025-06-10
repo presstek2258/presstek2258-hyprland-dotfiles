@@ -15,6 +15,7 @@
 	      "bluetooth",
         "backlight",
         "keyboard-state",
+        "tray",
     ],
     "modules-center": [
       "clock",
@@ -33,7 +34,6 @@
         //"sway/language",
         "battery",
         "battery#bat2",
-        "tray",
     ],
 
     // Modules configuration
