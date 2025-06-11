@@ -18,7 +18,7 @@ yay -Syu
 ```
 
 ```bash
-yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux pcloud-drive brave-bin htop ttf-jetbrains-mono ttf-font-awesome ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator nvidia nvidia-utils ollama-cuda tailscale thunar tldr unrar unzip wget nwg-look network-manager-applet
+yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux pcloud-drive brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator nvidia nvidia-utils ollama-cuda tailscale thunar tldr unrar unzip wget nwg-look network-manager-applet
 ```
 
 ## clone repo directly to your .config / .local
