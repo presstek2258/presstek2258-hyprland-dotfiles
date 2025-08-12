@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Discord -App
+Comment=Launch Discord
+Exec=/home/adrian/Downloads/Discord/Discord
+Icon=
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
