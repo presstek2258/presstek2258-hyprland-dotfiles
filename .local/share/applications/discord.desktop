@@ -2,7 +2,7 @@
 Version=1.0
 Name=Discord -App
 Comment=Launch Discord
-Exec=/home/adrian/Downloads/Discord/Discord
+Exec=/home/adrian/Downloads/Discord/Discord --enable-features=UseOzonePlatform --ozone-platform=wayland
 Icon=
 Terminal=false
 Type=Application
