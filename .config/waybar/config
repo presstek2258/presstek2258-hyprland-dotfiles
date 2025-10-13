@@ -14,7 +14,7 @@
         "network",
 	      "bluetooth",
         "backlight",
-        "keyboard-state",
+        //"keyboard-state",
         "tray",
         "custom/power",
     ],
