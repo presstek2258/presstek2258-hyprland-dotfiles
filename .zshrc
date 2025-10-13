@@ -1,5 +1,8 @@
 # ~/.zshrc
 
+# for flutter development
+echo 'export PATH="$HOME/Downloads/flutter/bin:$PATH"' >> ~/.zshenv
+
 # starts starship and zoxide
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
