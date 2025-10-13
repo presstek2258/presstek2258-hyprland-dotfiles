@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Steam Big Picture -App
+Comment=Launch Steam in big picture mode
+Exec=steam -gamepadui
+Icon=
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
