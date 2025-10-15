@@ -25,7 +25,7 @@ station wlan0 connect SSID
 
 ## archinstall
 
-select options:
+select options:    
 	- hyprland    
 	- ly    
    	- polkit    
