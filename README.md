@@ -2,14 +2,69 @@
 
 ---
 
-## install instructions
+## connect to wifi
 
-- install arch linux
-- chroot post install packages:
-```bash
-pacman -S neovim git networkmanager
+- wiki:
 ```
+https://wiki.archlinux.org/title/Iwd
+```
+
+```
+iwctl
+```
+- in the `iwd` terminal:
+```
+device list
+```
+```
+station wlan0 scan
+```
+```
+station wlan0 get-networks
+```
+```
+station wlan0 connect SSID
+```
+
+## archinstall
+
+- select options:
+	- hyprland
+	- ly
+   	- polkit
+   	- pipewire
+   	- bluetooth
+   	- networkmanager
+   	- btrfs subvolumes
+   	- zram swap
+   	- grub
+   	- graphics driver: all open-source
+
+- hyprland packages:
+```bash
+dolphin dunst hyprland kitty polkit-kde-agent qt5-wayland qt6-wayland grim slurp wofi xdg-desktop-portal-hyprland
+```
+   
+- additional packages:
+```bash
+neovim git pacman
+```
+
 - reboot and login into arch
+- reconnect to wifi with:
+```bash
+nmcli device wifi connect SSID password PASSWORD
+```
+
+## install yay
+
+```bash
+sudo git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -r yay 
+```
 
 ## update and install requirements
 
@@ -18,7 +73,7 @@ yay -Syu
 ```
 
 ```bash
-yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xboxdrv xpadneo-dkms ncdu wl-clipboard grim obs-studio slurp xwaylandvideobridge qogir-gtk-theme pavucontrol
+yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol
 ```
 
 ## clone repo directly to your .config / .local
@@ -43,6 +98,13 @@ chsh -s /bin/zsh
 ## change gtk programs theme
 
 > OPEN: GTK-settings (nwg-look) and change the theme
+
+## disable kwallet
+
+Add the following to `~/.config/kwalletrc`
+```
+Enabled=false
+```
 
 ## brightness keys
 
