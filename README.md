@@ -28,7 +28,7 @@ station wlan0 connect SSID
 
 ## archinstall
 
-- select options:
+select options:
 	- hyprland
 	- ly
    	- polkit
@@ -40,18 +40,18 @@ station wlan0 connect SSID
    	- grub
    	- graphics driver: all open-source
 
-- hyprland packages:
+hyprland packages:
 ```bash
 dolphin dunst hyprland kitty polkit-kde-agent qt5-wayland qt6-wayland grim slurp wofi xdg-desktop-portal-hyprland
 ```
    
-- additional packages:
+additional packages:
 ```bash
 neovim git pacman
 ```
 
-- reboot and login into arch
-- reconnect to wifi with:
+reboot and login into arch
+reconnect to wifi with:
 ```bash
 nmcli device wifi connect SSID password PASSWORD
 ```
@@ -104,6 +104,23 @@ chsh -s /bin/zsh
 Add the following to `~/.config/kwalletrc`
 ```
 Enabled=false
+```
+
+## update grub config / change kernel
+
+download the kernel to add to grub:
+```bash
+yay -S linux-cachyos linux-cachyos-headers
+```
+
+edit grub settings:
+```bash
+sudo nvim /etc/default/grub
+```
+
+remake the grub config with the new settings:
+```bash
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## brightness keys
