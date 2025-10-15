@@ -4,14 +4,12 @@
 
 ## connect to wifi
 
-- wiki:
-```
-https://wiki.archlinux.org/title/Iwd
-```  
+wiki: `https://wiki.archlinux.org/title/Iwd`
+enter the `iwd` terminal:
 ```
 iwctl
 ```
-- in the `iwd` terminal:
+in the `iwd` terminal:
 ```
 device list
 ```
