@@ -26,16 +26,16 @@ station wlan0 connect SSID
 ## archinstall
 
 select options:
-	- hyprland
-	- ly
-   	- polkit
-   	- pipewire
-   	- bluetooth
-   	- networkmanager
-   	- btrfs subvolumes
-   	- zram swap
-   	- grub
-   	- graphics driver: all open-source
+	- hyprland    
+	- ly    
+   	- polkit    
+   	- pipewire    
+   	- bluetooth    
+   	- networkmanager    
+   	- btrfs subvolumes    
+   	- zram swap    
+   	- grub    
+   	- graphics driver: all open-source    
 
 hyprland packages:
 ```bash
