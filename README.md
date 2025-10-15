@@ -18,7 +18,7 @@ yay -Syu
 ```
 
 ```bash
-yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux pcloud-drive brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xboxdrv xpadneo-dkms ncdu wl-clipboard grim obs-studio slurp xwaylandvideobridge qogir-gtk-theme
+yay -S ly kitty dunst hyprland hyprpaper xdg-desktop-portal-hyprland qt5-wayland qt6-wayland waybar wofi starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep blueman jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xboxdrv xpadneo-dkms ncdu wl-clipboard grim obs-studio slurp xwaylandvideobridge qogir-gtk-theme pavucontrol
 ```
 
 ## clone repo directly to your .config / .local
