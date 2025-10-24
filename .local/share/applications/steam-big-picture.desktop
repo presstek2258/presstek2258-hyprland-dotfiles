@@ -3,7 +3,7 @@
 Version=1.0
 Name=Steam Big Picture -App
 Comment=Launch Steam in big picture mode
-Exec=steam -gamepadui
+Exec=steam steam://open/bigpicture
 Icon=
 Terminal=false
 Type=Application
