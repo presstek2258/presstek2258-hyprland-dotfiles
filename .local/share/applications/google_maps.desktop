@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Google Maps -App
+Comment=Launch google maps
+Exec=brave --app=https://google.com./maps
+Icon=brave
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
