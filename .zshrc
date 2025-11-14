@@ -17,3 +17,11 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # sets brave as default browser for jupyter lab
 export BROWSER=brave jupyter lab
 
+# lets jenv use the path to set specific java versions within folders
+eval "$(jenv init -)"
+
+# opencode
+export PATH=/home/adrian/.opencode/bin:$PATH
+
+# enable the usage of pcloud command
+alias pcloud="~/Downloads/pcloud"
