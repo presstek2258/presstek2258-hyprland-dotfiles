@@ -70,7 +70,12 @@ yay -Syu
 ```
 
 ```bash
-yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp github-cli qwen-code
+yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp github-cli qwen-code paccache 
+```
+
+printer packages:
+```bash
+sane simple-scan cups avahi nss-mdns
 ```
 
 ## clone repo directly to your .config / .local
