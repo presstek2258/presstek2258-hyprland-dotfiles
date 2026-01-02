@@ -25,3 +25,6 @@ export PATH=/home/adrian/.opencode/bin:$PATH
 
 # enable the usage of pcloud command
 alias pcloud="~/Downloads/pcloud"
+
+# enter python virutal environment with command
+alias venv="source ~/venv/bin/activate"
