@@ -28,3 +28,6 @@ alias pcloud="~/Downloads/pcloud"
 
 # enter python virutal environment with command
 alias venv="source ~/venv/bin/activate"
+
+# vim-gnupg path setup
+export GPG_TTY=$(tty)
