@@ -73,11 +73,6 @@ yay -Syu
 yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp github-cli qwen-code paccache 
 ```
 
-printer packages:
-```bash
-sane simple-scan cups avahi nss-mdns
-```
-
 ## clone repo directly to your .config / .local
 
 > WARNING: THIS WILL REPLACE FILES!!!
@@ -123,6 +118,46 @@ sudo nvim /etc/default/grub
 remake the grub config with the new settings:
 ```bash
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+## printing / scanning setup
+
+printer packages:
+```bash
+yay -S sane sane-airscan simple-scan cups avahi nss-mdns brother-mfcj4535dw-cups-bin
+```
+
+run commands:
+```bash
+sudo systemctl enable --now avahi-daemon
+```
+```bash
+sudo ln -s /opt/brother/Printers/mfcj4535dw/cupswrapper/brother_lpdwrapper_mfcj4535dw /usr/lib/cups/filter/brother_lpdwrapper_mfcj4535dw
+```
+```bash
+sudo chmod 755 /usr/lib/cups/filter/brother_lpdwrapper_mfcj4535dw
+```
+```bash
+sudo systemctl restart cups
+```
+```bash
+sudo usermod -aG scanner,lp adrian
+```
+
+CUPS and scanner setup:
+1. Go to `localhost:631/admin` webapp  
+2. Add printer with:  
+   - Connection: ipp://PRINTER_IP/ipp/print  
+   - driver: IPP everwhere TM (this will auto change to the brother-mfc...)  
+3. Add the code snippet to `/etc/sane.d/airscan.conf`
+```
+[devices]
+"Brother MFC-J4535DW" = http://PRINTER_IP:80/eSCL
+```
+4. Relog
+5. check scanner with:
+```bash
+scanimage -L
 ```
 
 ## brightness keys
