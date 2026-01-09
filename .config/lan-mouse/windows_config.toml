@@ -1,0 +1,6 @@
+# put config this file at
+# C:\Users\littl\AppData\Local\lan-mouse\lan-mouse.exe
+# on windows computer
+[left]
+hostname = "192.168.7.187"
+activate_on_startup = true
