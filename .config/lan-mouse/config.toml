@@ -1,0 +1,12 @@
+# General settings
+port = 4242
+
+# Define the laptop on the right
+[right]
+hostname = "192.168.x.xxx"
+activate_on_startup = true
+
+# Define another computer on the bottom
+[bottom]
+hostname = "192.168.x.xxx"
+activate_on_startup = true
