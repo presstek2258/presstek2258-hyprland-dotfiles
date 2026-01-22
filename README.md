@@ -82,6 +82,7 @@ git clone https://github.com/presstek2258/presstek2258-hyprland-dotfiles.git ~/t
 rm -rf ~/temp-config/.git
 sudo cp -r ~/temp-config/. ~/
 rm -rf ~/temp-config
+sudo chmod -R 755 ~/.config
 ```
 
 ## change shell
