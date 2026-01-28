@@ -106,7 +106,7 @@ Enabled=false
 
 ## setup python ML virtual environment
 
-> URL: [Get that updated url](https://pytorch.org/get-started/locally/)  
+> URL: [Get the updated url](https://pytorch.org/get-started/locally/)  
 ```bash
 pyenv install 3.14.2
 ~/.pyenv/versions/3.14.2/bin/python -m venv ~/venv
