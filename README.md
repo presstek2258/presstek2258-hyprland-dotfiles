@@ -70,7 +70,7 @@ yay -Syu
 ```
 
 ```bash
-yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp qwen-code paccache lan-mouse localsend 
+yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux brave-bin htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk libreoffice-still neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp qwen-code paccache lan-mouse localsend pyenv
 ```
 
 ## clone repo directly to your .config / .local
@@ -102,6 +102,19 @@ chsh -s /bin/zsh
 Add the following to `~/.config/kwalletrc`
 ```
 Enabled=false
+```
+
+## setup python ML virtual environment
+
+> URL: (Get that updated url)[https://pytorch.org/get-started/locally/]  
+```bash
+pyenv install 3.14.2
+~/.pyenv/versions/3.14.2/bin/python -m venv ~/venv
+source ~/venv/bin/activate
+mkdir -p ~/pip_tmp
+TMPDIR=~/pip_tmp pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1 --no-cache-dir
+rm -rf ~/pip_tmp
+pip install opencv-python
 ```
 
 ## update grub config / change kernel
