@@ -114,7 +114,7 @@ source ~/venv/bin/activate
 mkdir -p ~/pip_tmp
 TMPDIR=~/pip_tmp pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1 --no-cache-dir
 rm -rf ~/pip_tmp
-pip install opencv-python
+pip install opencv-python lightning
 ```
 
 ## update grub config / change kernel
