@@ -109,13 +109,22 @@ Enabled=false
 > URL: [Get the updated url](https://pytorch.org/get-started/locally/)  
 ```bash
 pyenv install 3.14.2
+```
+```bash
+~/.pyenv/versions/3.14.2/bin/python -m venv ~/venv
+source ~/venv/bin/activate
+pip install torch torchvision torchaudio opencv-python lightning matplotlib jupyterlab
+```
+For ROCM support:  
+```bash
 ~/.pyenv/versions/3.14.2/bin/python -m venv ~/venv
 source ~/venv/bin/activate
 mkdir -p ~/pip_tmp
 TMPDIR=~/pip_tmp pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1 --no-cache-dir
 rm -rf ~/pip_tmp
-pip install opencv-python lightning
+pip install opencv-python lightning matplotlib jupyterlab
 ```
+
 
 ## update grub config / change kernel
 
