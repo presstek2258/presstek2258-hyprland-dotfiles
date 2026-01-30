@@ -113,7 +113,7 @@ pyenv install 3.14.2
 ```bash
 ~/.pyenv/versions/3.14.2/bin/python -m venv ~/venv
 source ~/venv/bin/activate
-pip install torch torchvision torchaudio opencv-python lightning matplotlib jupyterlab
+pip install torch torchvision torchaudio opencv-python lightning matplotlib jupyterlab jupyterlab-lsp jupyterlab-vim
 ```
 For ROCM support:  
 ```bash
