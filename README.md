@@ -117,7 +117,7 @@ pip install torch torchvision torchaudio opencv-python lightning matplotlib jupy
 ```
 For ROCM support:  
 ```bash
-~/.pyenv/versions/3.14.2/bin/python -m venv ~/venv
+~/.pyenv/versions/3.11.9/bin/python -m venv ~/venv
 source ~/venv/bin/activate
 mkdir -p ~/pip_tmp
 TMPDIR=~/pip_tmp pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1 --no-cache-dir
