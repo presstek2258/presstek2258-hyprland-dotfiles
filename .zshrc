@@ -1,7 +1,10 @@
 # ~/.zshrc
 
+# Prevent PATH duplication in nested shells (tmux, neovim)
+typeset -U PATH path
+
 # for flutter development
-echo 'export PATH="$HOME/Downloads/flutter/bin:$PATH"' >> ~/.zshenv
+export PATH="$HOME/Downloads/flutter/bin:$PATH"
 
 # android emulator path
 alias emulator="~/Android/Sdk/emulator/emulator"
@@ -31,3 +34,11 @@ alias venv="source ~/venv/bin/activate"
 
 # vim-gnupg path setup
 export GPG_TTY=$(tty)
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/adrian/.dart-cli-completion/zsh-config.zsh ]] && . /home/adrian/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+# fliirebase flutterfire cli
+export PATH="$PATH":"$HOME/.pub-cache/bin"
