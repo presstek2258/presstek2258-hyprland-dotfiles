@@ -1,5 +1,8 @@
 # ~/.zshrc
 
+# for flatpak brave to launch with brave command
+export PATH="$HOME/.local/bin:$PATH"
+
 # Prevent PATH duplication in nested shells (tmux, neovim)
 typeset -U PATH path
 
