@@ -70,7 +70,7 @@ yay -Syu
 ```
 
 ```bash
-yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp qwen-code pacman-contrib lan-mouse localsend pyenv tree yazi flatpak steam mangohud gamescope proton-ge-custom-bin scrcpy ib-tws
+yay -S hyprpaper waybar starship zsh zsh-syntax-highlighting zsh-autosuggestions zoxide neovim tmux htop ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols ripgrep jdk neofetch npm xarchiver base-devel firewalld galculator ollama-rocm tailscale thunar tldr unrar unzip zip wget nwg-look network-manager-applet blueberry xpadneo-dkms ncdu wl-clipboard obs-studio xwaylandvideobridge qogir-gtk-theme pavucontrol yt-dlp qwen-code pacman-contrib lan-mouse localsend pyenv tree yazi flatpak steam mangohud gamescope proton-ge-custom-bin scrcpy ib-tws dmemcg-booster plasma-foreground-booster-dmemcg
 ```
 
 ```bash
