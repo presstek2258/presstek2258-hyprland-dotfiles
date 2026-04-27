@@ -3,7 +3,7 @@
 Version=1.0
 Name=NotebookLM -App 
 Comment=Launch NotebookLM 
-Exec=brave --app=https://notebooklm.google.com/
+Exec=flatpak run com.brave.Browser --app=https://notebooklm.google.com/
 Icon=brave
 Terminal=false
 Type=Application

@@ -3,7 +3,7 @@
 Version=1.0
 Name=Meta LLama -App 
 Comment=Launch LLama 
-Exec=brave --app=https://www.meta.ai
+Exec=flatpak run com.brave.Browser --app=https://www.meta.ai
 Icon=brave
 Terminal=false
 Type=Application

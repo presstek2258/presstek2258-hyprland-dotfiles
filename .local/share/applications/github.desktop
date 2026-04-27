@@ -3,7 +3,7 @@
 Version=1.0
 Name=Github -App 
 Comment=Launch Github
-Exec=brave --app=https://www.github.com
+Exec=flatpak run com.brave.Browser --app=https://www.github.com
 Icon=brave
 Terminal=false
 Type=Application

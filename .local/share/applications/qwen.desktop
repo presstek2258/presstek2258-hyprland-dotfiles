@@ -3,7 +3,7 @@
 Version=1.0
 Name=Qwen -App 
 Comment=Launch Qwen 
-Exec=brave --app=https://chat.qwen.ai/
+Exec=flatpak run com.brave.Browser --app=https://chat.qwen.ai/
 Icon=brave
 Terminal=false
 Type=Application

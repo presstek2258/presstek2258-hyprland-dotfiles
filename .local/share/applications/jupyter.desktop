@@ -3,7 +3,7 @@
 Version=1.0
 Name=Jupyter -App 
 Comment=Launch Jupyter
-Exec=brave --app=http://localhost:8888/lab
+Exec=flatpak run com.brave.Browser --app=http://localhost:8888/lab
 Icon=brave
 Terminal=false
 Type=Application

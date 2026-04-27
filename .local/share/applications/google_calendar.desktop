@@ -3,7 +3,7 @@
 Version=1.0
 Name=Google Calendar -App
 Comment=Launch google calendar 
-Exec=brave --app=https://calendar.google.com
+Exec=flatpak run com.brave.Browser --app=https://calendar.google.com
 Icon=brave
 Terminal=false
 Type=Application

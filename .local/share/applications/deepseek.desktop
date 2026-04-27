@@ -3,7 +3,7 @@
 Version=1.0
 Name=DeepSeek R1 -App
 Comment=Launch DeepSeek R1 
-Exec=brave --app=https://chat.deepseek.com
+Exec=flatpak run com.brave.Browser --app=https://chat.deepseek.com
 Icon=brave
 Terminal=false
 Type=Application

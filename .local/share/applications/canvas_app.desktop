@@ -3,7 +3,7 @@
 Version=1.0
 Name=Canvas -App 
 Comment=Launch Canvas
-Exec=brave --app=https://learn.ontariotechu.ca
+Exec=flatpak run com.brave.Browser --app=https://learn.ontariotechu.ca
 Icon=brave
 Terminal=false
 Type=Application

@@ -3,7 +3,7 @@
 Version=1.0
 Name=Crunchyroll -App 
 Comment=Launch Crunchyroll
-Exec=brave --app=https://www.crunchyroll.com/videos/anime
+Exec=flatpak run com.brave.Browser --app=https://www.crunchyroll.com/videos/anime
 Icon=brave
 Terminal=false
 Type=Application

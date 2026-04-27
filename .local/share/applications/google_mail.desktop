@@ -3,7 +3,7 @@
 Version=1.0
 Name=Google Mail -App
 Comment=Launch google mail 
-Exec=brave --app=https://mail.google.com
+Exec=flatpak run com.brave.Browser --app=https://mail.google.com
 Icon=brave
 Terminal=false
 Type=Application

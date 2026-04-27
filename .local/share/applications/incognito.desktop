@@ -3,7 +3,7 @@
 Version=1.0
 Name=Incognito Browser
 Comment=Launches Brave in private mode
-Exec=brave --incognito 
+Exec=flatpak run com.brave.Browser --incognito 
 Icon=brave
 Terminal=false
 Type=Application
