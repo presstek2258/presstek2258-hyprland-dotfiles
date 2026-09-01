@@ -134,6 +134,13 @@ rm -rf ~/pip_tmp
 pip install opencv-python lightning matplotlib jupyterlab jupyterlab-lsp jupyterlab-vim pandas
 ```
 
+## mount extra drives/partitions
+> NOTE: seperate partitions are recommended for Linux / Windows if Dual Booting  
+mount the partition to `/mnt/FireLinux` with `BTRFS` format, by adding the following line to `/etc/fstab`
+use `lsblk -f` to check mounting and location: `/dev/sda2`  
+```bash
+/dev/sda2 /mnt/FireLinux btrfs noatime,compress=zstd,nofail 0 0
+```
 
 ## update grub config / change kernel
 
