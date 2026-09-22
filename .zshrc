@@ -35,6 +35,10 @@ alias pcloud="~/Downloads/pcloud"
 # enter python virutal environment with command
 alias venv="source ~/venv/bin/activate"
 
+# tree shortcuts
+alias l="eza --tree --level=1"
+alias lt="eza --tree --level=2"
+
 # vim-gnupg path setup
 export GPG_TTY=$(tty)
 
