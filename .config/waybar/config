@@ -13,7 +13,7 @@
         "pulseaudio",
         "network",
 	      "bluetooth",
-        "backlight",
+        //"backlight",
         //"keyboard-state",
         "tray",
         "custom/power",
