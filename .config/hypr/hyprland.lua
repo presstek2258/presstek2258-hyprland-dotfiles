@@ -17,8 +17,8 @@
 -- See https://wiki.hypr.land/configuring/core/monitors/
 --
 --
--- [FOR SCREEN CAPTURE - because hdr and bitdepth + capture doesn't work]
-hl.monitor({ output = "HDMI-A-1", mode = "3440x1440@100", position = "0x0", scale = 1.6 })
+-- [FOR SCREEN CAPTURE - because hdr + capture doesn't work]
+hl.monitor({ output = "HDMI-A-1", mode = "3440x1440@100", position = "0x0", scale = 1.6, bitdepth = 10 })
 
 -- [FOR CODING]
 -- for gigabyte monitor (21:9):
@@ -363,16 +363,23 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 -- See https://wiki.hypr.land/configuring/core/rules/
 
+-- disable auto-hdr for brave (fixes fullscreen toggle)
+hl.window_rule({
+    name = "windowrule-no-auto-hdr",
+    match = { class = "^(brave-browser)$" },
+    no_auto_hdr = true,
+})
+
 -- prevent from floating
 hl.window_rule({
-	name = "windowrule-1",
-	match = { class = "^(Brave-browser)$" },
+	name = "windowrule-tile-1",
+	match = { class = "^(brave-browser)$" },
 	tile = true,
 })
 
 -- force to float with fixed size
 hl.window_rule({
-	name = "windowrule-2",
+	name = "windowrule-float-1",
 	match = { title = "^(sticky)$" },
 	float = true,
 	center = true,
@@ -380,7 +387,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "windowrule-3",
+	name = "windowrule-float-2",
 	match = { class = "^(org.pulseaudio.pavucontrol)$" },
 	float = true,
 	center = true,
@@ -388,7 +395,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "windowrule-4",
+	name = "windowrule-float-3",
 	match = { class = "^(blueman-manager)$" },
 	float = true,
 	center = true,
@@ -396,7 +403,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "windowrule-5",
+	name = "windowrule-float-4",
 	match = { class = "^(blueberry.py)$" },
 	float = true,
 	center = true,
@@ -404,7 +411,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "windowrule-6",
+	name = "windowrule-float-5",
 	match = { class = "^(galculator)$" },
 	float = true,
 	center = true,
@@ -412,8 +419,16 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "windowrule-7",
+	name = "windowrule-float-6",
 	match = { class = "^(nwg-look)$" },
+	float = true,
+	center = true,
+	size = "800 600",
+})
+
+hl.window_rule({
+	name = "windowrule-float-7",
+	match = { class = "^(anomaly.hex)$" },
 	float = true,
 	center = true,
 	size = "800 600",
@@ -422,21 +437,21 @@ hl.window_rule({
 -- apply rounding to floating windows
 -- the rounding_power=2 is set in decoration
 hl.window_rule({
-	name = "windowrule-8",
+	name = "windowrule-round-float",
 	match = { float = true },
 	rounding = 6,
 })
 
 -- Ignore maximize requests from apps. You'll probably like this.
 hl.window_rule({
-	name = "windowrule-9",
+	name = "windowrule-ignore-max",
 	match = { class = ".*" },
 	suppress_event = "maximize",
 })
 
 -- Fix some dragging issues with XWayland
 hl.window_rule({
-	name = "windowrule-10",
+	name = "windowrule-dragging",
 	match = {
 		class = "^$",
 		title = "^$",
@@ -448,7 +463,7 @@ hl.window_rule({
 	no_focus = true,
 })
 
--- vtueb studio
+-- vtube studio
 hl.window_rule({
 	name = "megumin-companion",
 	match = { class = "^(steam_app_1325860)$" },
