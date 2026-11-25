@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # toggle floating
-hyprctl dispatch togglefloating
+hyprctl dispatch 'hl.dsp.window.float({ action = "toggle" })'
 sleep 0.05
 
 # resize and center the window
-hyprctl dispatch centerwindow
+hyprctl dispatch 'hl.dsp.window.center()'
